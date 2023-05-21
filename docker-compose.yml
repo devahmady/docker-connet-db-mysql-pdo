@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  php-env:
+    container_name: php-env  
+    build: .
+    ports:
+      - 8000:80
+    networks:
+      - bridge-2-cst 
+
+networks:
+ bridge-2-cst :    
+  name: bridge-2-cst 
+  
+    
+
